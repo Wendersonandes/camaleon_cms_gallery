@@ -1,0 +1,17 @@
+{
+  "title": "Gallery",
+  "descr": "",
+  "key": "gallery",
+  "helpers": [
+    "Plugins::Gallery::MainHelper"
+  ],
+  "hooks": {
+    "on_active": [
+      "gallery_on_active"
+    ],
+    "on_inactive": [
+      "gallery_on_inactive"
+    ]
+    //here you can add all your hooks (read documentation)
+  }
+}
