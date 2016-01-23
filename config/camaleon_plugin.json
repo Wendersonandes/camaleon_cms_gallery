@@ -11,6 +11,9 @@
     ],
     "on_inactive": [
       "gallery_on_inactive"
+    ],
+    "admin_before_load": [
+          "gallery_admin_before_load"
     ]
     //here you can add all your hooks (read documentation)
   }
