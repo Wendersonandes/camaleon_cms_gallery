@@ -1,3 +1,3 @@
-# CamaleonCms::Site.class_eval do
-#   has_many :attack, class_name: "Plugins::Attack::Models::Attack"
-# end
+CamaleonCms::Site.class_eval do
+  has_many :galleries, :class_name => "Plugins::Gallery::Gallery", dependent: :destroy
+end

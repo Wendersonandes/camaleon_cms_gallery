@@ -1,0 +1,6 @@
+<h1>Plugins::Gallery::Admin::Galleries#new</h1>
+<p>Find me in app/views/plugins/gallery/admin/galleries/new.html.erb</p>
+<%= form_for @gallery, url:{action: @gallery.new_record? ? :create : :update},  html: {class: 'validate-coupon', id: 'form-coupon'}  do |f| %>
+  <%= f.text_field :title, :class => "form-control required" %>
+  <%= f.text_field :description, :class => "form-control required" %>
+<% end %>

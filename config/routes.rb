@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
 
-  namespace :plugins do
-  namespace :gallery do
-    namespace :admin do
-      end
-    end
-  end
 
     scope PluginRoutes.system_info["relative_url_root"] do
       scope '(:locale)', locale: /#{PluginRoutes.all_locales}/, :defaults => {  } do
@@ -23,6 +17,7 @@ Rails.application.routes.draw do
           namespace 'gallery' do
             get 'index' => 'admin#index'
             get 'settings' => 'admin/settings#index'
+            resources :galleries, controller: "admin/galleries"
           end
         end
       end
