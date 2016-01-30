@@ -3,3 +3,5 @@ en:
     gallery:
       gallery: "Gallery"
       all_galleries: 'All Galleries'
+      new_gallery: 'New Gallery'
+      edit_gallery: "Edit Gallery"

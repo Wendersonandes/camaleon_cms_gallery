@@ -25,7 +25,7 @@ module Plugins::Gallery::MainHelper
      pt = current_site.post_types.hidden_menu.where(slug: "gallery").first
     if pt.present?
       items_i = []
-      items_i << {icon: "list", title: t('plugin.gallery.all_galleries'), url: cama_admin_post_type_posts_path(pt.id)} if can? :posts, pt
+      items_i << {icon: "list", title: t('plugin.gallery.all_galleries'), url: admin_plugins_gallery_galleries_path} 
       items_i << {icon: "plus", title: t('camaleon_cms.admin.post_type.add_new'), url: new_admin_plugins_gallery_gallery_path} if can? :create_post, pt
       if pt.manage_categories?
         items_i << {icon: "folder-open", title: t('camaleon_cms.admin.post_type.categories'), url: cama_admin_post_type_categories_path(pt.id)} if can? :categories, pt

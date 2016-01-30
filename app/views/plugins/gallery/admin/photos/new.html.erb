@@ -1,0 +1,8 @@
+<h1>Plugins::Gallery::Admin::Photos#new</h1>
+<p>Find me in app/views/plugins/gallery/admin/photos/new.html.erb</p>
+<%= form_for  [@gallery, @photo] , as: "photo", url: {action: @photo.new_record? ? :create : :update}, html: {class: 'form-post row cama_ajax_request', id: 'form-post'}  do |f| %>
+
+  <h1>Upload Gallery Photos:  <%= @gallery.title %></h1>
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
