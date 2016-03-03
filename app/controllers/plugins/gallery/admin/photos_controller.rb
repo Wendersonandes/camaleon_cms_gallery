@@ -43,7 +43,7 @@ def set_photo
 end
 
  def photo_params
-  #params.require(:photo).permit(:title, :description, :asset)
+  params.require(:photo).permit(:title, :description, :image)
   end
 
 end

@@ -4,5 +4,9 @@
 
   <h1>Upload Gallery Photos:  <%= @gallery.title %></h1>
   <%= f.text_field :title %>
+  <%= f.text_field :description %>
+  <%= f.file_field :image %>
+                      <a href="#" class="btn btn-default" onclick="upload_feature_image(); return false;"><i class="fa fa-upload"></i> <%= t('camaleon_cms.admin.post_type.upload_image')%></a>
+
   <%= f.submit %>
 <% end %>

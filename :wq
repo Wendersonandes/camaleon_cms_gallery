@@ -1,4 +1,0 @@
-<h1>Plugins::Gallery::Admin::Galleries#show</h1>
-<p>Find me in app/views/plugins/gallery/admin/galleries/show.html.erb</p>
-<%= @gallery.title %>
-<%= link_to 'Upload Photos', new_admin_plugins_gallery_gallery_photo_path(@gallery) %>
